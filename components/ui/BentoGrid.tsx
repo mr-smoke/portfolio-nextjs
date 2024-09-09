@@ -4,6 +4,7 @@ import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
 import GridGlobe from "./GridGlobe";
 import { useState } from "react";
 import { ButtonsCard } from "./ButtonsCard";
+import { IoCopyOutline } from "react-icons/io5";
 
 export const BentoGrid = ({
   className,
@@ -49,6 +50,12 @@ export const BentoGridItem = ({
   const rightLists = ["Tailwind", "NodeJS", "GraphQL"];
 
   const [copied, setCopied] = useState(false);
+  const handleCopy = () => {
+    const text = "muhammetbakiduman@gmail.com";
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+  };
+
   return (
     <div
       className={cn(
@@ -57,7 +64,7 @@ export const BentoGridItem = ({
       )}
     >
       {header}
-      <div className={`${id === 6} && "flex justify-center h-full"`}>
+      <div className={`${id === 6 && "flex justify-center"} h-full"`}>
         <div className="w-full h-full absolute">
           {img && (
             <img
@@ -97,25 +104,28 @@ export const BentoGridItem = ({
           </div>
           {id === 2 && <GridGlobe />}
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-6 -top-5">
               <div className="flex flex-col gap-3 lg:gap-8">
                 {leftLists.map((item, i) => (
                   <span
                     key={i}
-                    className="rounded-lg bg-slate-400 p-2 text-center"
+                    className="font-mono rounded bg-slate-900 p-3 lg:p-4 text-center text-xs lg:text-base opacity-50 lg:opacity-100"
                   >
                     {item}
                   </span>
                 ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg text-center"></span>
+                <span className="rounded bg-slate-900 p-4 h-12 opacity-50 lg:opacity-100"></span>
               </div>
-              <div className="flex flex-col gap-3 lg:gap-8">
+              <div className="flex flex-col gap-3 lg:gap-8 -my-5">
+                <span className="rounded bg-slate-900 p-4 h-12 opacity-50 lg:opacity-100"></span>
                 {rightLists.map((item, i) => (
-                  <span key={i} className="py-2 px-3 rounded-lg">
+                  <span
+                    key={i}
+                    className="font-mono rounded bg-slate-900 p-3 lg:p-4 text-center text-xs lg:text-base opacity-50 lg:opacity-100"
+                  >
                     {item}
                   </span>
                 ))}
-                <span className="lg:py-4 lg:px-3 py-4 px-3 rounded-lg text-center"></span>
               </div>
             </div>
           )}
@@ -126,7 +136,13 @@ export const BentoGridItem = ({
                   copied ? "block" : "block"
                 }`}
               ></div>
-              <ButtonsCard className="mt-10">Get Started</ButtonsCard>
+              <ButtonsCard
+                onClick={handleCopy}
+                className="text-white font-bold"
+              >
+                <IoCopyOutline className="mr-3" />
+                {copied ? "Copied" : "Copy My Mail"}
+              </ButtonsCard>
             </div>
           )}
         </div>

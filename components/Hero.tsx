@@ -31,7 +31,9 @@ const Hero = () => {
             in creating modern, responsive websites and applications."
             className="text-4xl md:text-5xl lg:text-6xl text-center"
           />
-          <ButtonsCard className="mt-10">Get Started</ButtonsCard>
+          <a href="#about" className="mt-5">
+            <ButtonsCard>Get Started</ButtonsCard>
+          </a>
         </div>
       </div>
     </div>
