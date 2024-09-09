@@ -5,7 +5,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div>
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -18,7 +18,7 @@ const Hero = () => {
         <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
       </div>
       <Background />
-      <div className="relative my-20 z-10 flex justify-center">
+      <div className="relative z-10 flex justify-center h-screen">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-center text-black-100 dark:text-blue-100 tracking-wide ">
             Welcome to the future of design
