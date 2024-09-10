@@ -20,8 +20,9 @@ const Hero = () => {
       <Background />
       <div className="relative z-10 flex justify-center h-screen">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-center text-black-100 dark:text-blue-100 tracking-wide ">
-            Welcome to the future of design
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-center text-black-100 dark:text-blue-100 tracking-wide">
+            Welcome to the future of{" "}
+            <span className="text-fuchsia-500">design</span>
           </h1>
           <p className="text-md md:text-lg lg:text-xl text-center text-black-100 dark:text-blue-100 mt-5 mb-5">
             Transforming Concepts into Seamless User Experiences
