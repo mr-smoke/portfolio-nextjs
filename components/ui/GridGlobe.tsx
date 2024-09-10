@@ -425,7 +425,7 @@ const GridGlobe = () => {
         </motion.div> */}
         <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
         {/* remove -bottom-20 */}
-        <div className="absolute w-full h-full z-10 md:mt-8">
+        <div className="absolute w-full h-full md:mt-8">
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
       </div>
