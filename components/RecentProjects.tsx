@@ -12,7 +12,7 @@ const RecentProjects = () => {
       <div className="flex justify-center flex-wrap mt-10">
         {projects.map((project, index) => (
           <div
-            className="flex w-[80vw] sm:w-1/2 h-[25rem] lg:min-h-[36.5rem]"
+            className="flex w-[80vw] xl:w-1/2 h-[30rem] sm:min-h-[36.5rem]"
             key={index}
           >
             <PinContainer
@@ -20,43 +20,43 @@ const RecentProjects = () => {
               title="Visit"
               href={project.link}
             >
-              <div className="">
-                <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden">
-                  <div className="relative w-full h-full bg-violet-950 overflow-hidden rounded-3xl">
-                    <img src="/bg.png" />
-                  </div>
-                  <img
-                    src={project.img}
-                    alt={project.title}
-                    className="rounded-lg absolute bottom-0"
-                  />
+              <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden">
+                <div className="relative w-full bg-violet-950 overflow-hidden rounded-3xl h-full ">
+                  <img src="/bg.png" />
                 </div>
-                <div>
-                  <h3 className="text-2xl font-bold mt-8">{project.title}</h3>
-                  <p className="text-xl font-light text-fuchsia-200 mt-2">
-                    {project.des}
-                  </p>
+                <img
+                  src={project.img}
+                  alt={project.title}
+                  className="rounded-lg absolute bottom-0"
+                />
+              </div>
+              <div>
+                <h3 className="text-xl sm:text-2xl font-bold mt-2 sm:mt-8">
+                  {project.title}
+                </h3>
+                <p className="text-base sm:text-xl font-light text-fuchsia-200 mt-2">
+                  {project.des}
+                </p>
+              </div>
+              <div className="flex justify-between items-center mt-4">
+                <div className="flex">
+                  {project.iconLists.map((icon, index) => (
+                    <span
+                      key={index}
+                      style={{ transform: `translateX(-${5 * index}px)` }}
+                    >
+                      <img
+                        src={icon}
+                        alt="icon"
+                        className="border border-slate-500 rounded-full sm:w-10 sm:h-10 w-7 h-7 p-1 sm:p-2 bg-gray-900"
+                      />
+                    </span>
+                  ))}
                 </div>
-                <div className="flex justify-between items-center mt-4">
-                  <div className="flex">
-                    {project.iconLists.map((icon, index) => (
-                      <span
-                        key={index}
-                        style={{ transform: `translateX(-${5 * index}px)` }}
-                      >
-                        <img
-                          src={icon}
-                          alt="icon"
-                          className="border border-slate-500 rounded-full w-10 h-10 p-2 bg-gray-900"
-                        />
-                      </span>
-                    ))}
-                  </div>
-                  <button className="text-purple text-xl tracking-wider font-medium flex items-center gap-2">
-                    Check Live Site
-                    <LuExternalLink />
-                  </button>
-                </div>
+                <button className="text-purple text-sm sm:text-xl tracking-wider font-medium flex items-center gap-2">
+                  Check Live Site
+                  <LuExternalLink />
+                </button>
               </div>
             </PinContainer>
           </div>
