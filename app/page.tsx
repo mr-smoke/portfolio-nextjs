@@ -1,6 +1,7 @@
 import Approach from "@/components/Approach";
 import Comments from "@/components/Comments";
 import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
@@ -15,6 +16,7 @@ export default function Home() {
         <Comments />
         <Experience />
         <Approach />
+        <Footer />
       </div>
     </main>
   );
