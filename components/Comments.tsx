@@ -8,7 +8,7 @@ const Comments = () => {
         Comments from
         <span className="text-fuchsia-500"> some clients</span>
       </h2>
-      <div className="mt-10 antialiased">
+      <div className="pt-10 antialiased">
         <InfiniteMovingCards items={testimonials} speed="slow" />
       </div>
     </section>

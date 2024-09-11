@@ -6,8 +6,8 @@ const RecentProjects = () => {
   return (
     <section className="py-20">
       <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-center dark:text-blue-100 tracking-wide">
-        A small selection of{" "}
-        <span className="text-fuchsia-500">recent projects</span>
+        A small selection of
+        <span className="text-fuchsia-500"> recent projects</span>
       </h2>
       <div className="flex justify-center flex-wrap mt-10">
         {projects.map((project, index) => (
