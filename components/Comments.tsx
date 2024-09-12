@@ -3,7 +3,7 @@ import { testimonials } from "@/data";
 
 const Comments = () => {
   return (
-    <section className="py-20">
+    <section id="comments" className="py-20">
       <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-center dark:text-blue-100 tracking-wide">
         Comments from
         <span className="text-fuchsia-500"> some clients</span>

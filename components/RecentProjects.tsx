@@ -4,7 +4,7 @@ import { LuExternalLink } from "react-icons/lu";
 
 const RecentProjects = () => {
   return (
-    <section className="py-20">
+    <section id="projects" className="py-20">
       <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-center dark:text-blue-100 tracking-wide">
         A small selection of
         <span className="text-fuchsia-500"> recent projects</span>

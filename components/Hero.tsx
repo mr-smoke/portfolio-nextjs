@@ -17,7 +17,7 @@ const Hero = () => {
         />
         <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
       </div>
-      <Background />
+      <Background className="h-screen" />
       <div className="relative z-10 flex justify-center h-screen">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-center text-black-100 dark:text-blue-100 tracking-wide">
