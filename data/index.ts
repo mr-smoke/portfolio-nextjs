@@ -8,7 +8,7 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "I prioritize client collaboration, fostering open and effective communication",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -18,7 +18,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "Adaptable to any time zone for seamless communication",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -49,8 +49,8 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title: "Currently building 3D projects with Three.js",
+    description: "Behind the scenes: crafting smoother, dynamic web animations",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -59,7 +59,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Ready to bring your project to life?",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -142,65 +142,32 @@ export const testimonials = [
   },
 ];
 
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
-];
-
 export const workExperience = [
   {
     id: 1,
     title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    desc: "Contributed to developing a web-based platform using React.js, enhancing user interactivity and performance.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
     title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    desc: "Designed and built mobile applications for both iOS and Android platforms using React Native.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
     title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
+    desc: "Led the development of a mobile app from concept to deployment, delivering a polished product to the app stores.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
     title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    desc: "Created and maintained user-centric features using cutting-edge frontend technologies.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -211,35 +178,35 @@ export const socialMedia = [
     id: 1,
     name: "github",
     img: "/git.svg",
-    link: "",
+    link: "https://github.com/mr-smoke",
   },
   {
     id: 2,
     name: "linkedin",
     img: "/link.svg",
-    link: "",
+    link: "https://www.linkedin.com/in/muhammet-baki-duman-019451195/",
   },
 ];
 
 export const myApproach = [
   {
     id: 1,
-    title: "I prioritize client collaboration",
-    description: "Fostering open communication",
+    title: "Planning & Strategy",
+    description: "We’ll work together to define your website’s goals, target audience, and essential features. This includes mapping out site structure, navigation, and content strategy.",
     img: "/b1.svg",
     bgColor: "bg-red-800",
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
-    description: "",
+    title: "Development & Progress Updates",
+    description: "With the plan in place, I’ll dive into development, keeping you updated regularly as the project evolves from concept to code.",
     img: "/b1.svg",
     bgColor: "bg-blue-800",
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "Development & Launch",
+    description: "The final step! After finalizing the design, I’ll bring your vision to life with clean, functional code, ready to launch.",
     img: "/b1.svg",
     bgColor: "bg-green-800",
   },

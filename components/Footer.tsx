@@ -14,7 +14,9 @@ const Footer = () => {
         <p className="text-xl text-center pt-4">
           Let's work together to create something unique.
         </p>
-        <ButtonsCard>Get in touch</ButtonsCard>
+        <a href="mailto:muhammetbakiduman@gmail.com">
+          <ButtonsCard>Get in touch</ButtonsCard>
+        </a>
       </div>
       <div className="flex flex-col md:flex-row justify-between items-center pt-10 z-10 relative">
         <p className="text-center order-1 pt-4 sm:text-start sm:-order-none sm:pt-0">
