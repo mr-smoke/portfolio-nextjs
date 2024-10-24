@@ -15,8 +15,11 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Baki's Portfolio",
+  title: "Baki Duman Portfolio",
   description: "Modern-Minimalist portfolio",
+  icons: {
+    icon: "./favicon.png",
+  },
 };
 
 export default function RootLayout({

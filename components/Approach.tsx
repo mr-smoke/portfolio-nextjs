@@ -8,7 +8,7 @@ const Approach = () => {
         My
         <span className="text-fuchsia-500"> approach</span>
       </h2>
-      <div className="pt-10 flex flex-col lg:flex-row items-center justify-center dark:bg-black w-full gap-4 mx-auto sm:px-8">
+      <div className="pt-10 flex flex-col lg:flex-row items-center justify-center w-full gap-4 mx-auto sm:px-8">
         {myApproach.map((item, id) => (
           <CanvasRevealEffectDemo2
             key={id}

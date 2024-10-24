@@ -25,10 +25,10 @@ const Hero = () => {
           </p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-center text-black-100 dark:text-blue-100 tracking-wide">
             Welcome to the next era of
-            <span className="text-fuchsia-500"> design</span>
+            <span className="text-fuchsia-500"> web development</span>
           </h1>
           <TextGenerateEffect
-            words="Hi there! I'm a web developer and designer from Turkey, passionate about crafting modern, responsive websites and applications."
+            words="Hi there! I'm a web developer from Turkey, passionate about crafting modern, responsive websites and applications."
             className="text-4xl md:text-5xl lg:text-6xl text-center pt-4 pb-8"
           />
           <a href="#about" className="mt-5">

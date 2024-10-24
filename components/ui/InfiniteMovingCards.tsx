@@ -11,10 +11,10 @@ export const InfiniteMovingCards = ({
   className,
 }: {
   items: {
-    quote: string;
+    desc: string;
     name: string;
-    title: string;
-    img: string;
+    link: string;
+    iconLists?: string[];
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -100,25 +100,34 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <span className="relative z-20 text-sm leading-3 md:text-xl md:leading-[1.6] text-gray-100 font-normal p-3 text-justify">
-                {item.quote}
-              </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
-                <span className="flex-shrink-0 w-12 h-12 rounded-full overflow-hidden">
-                  <img
-                    src={item.img}
-                    alt={item.name}
-                    className="w-full h-full object-cover"
-                  />
-                </span>
-                <span className="flex flex-col gap-1 ml-3">
-                  <span className="text-base md:text-xl leading-[1.6] text-gray-400 font-bold">
+              <div className="relative z-20 mb-6 flex flex-row items-center justify-center text-center">
+                <span className="flex flex-col gap-1">
+                  <span className="text-xl md:text-3xl leading-[1.6] text-gray-400 font-bold">
                     {item.name}
                   </span>
                   <span className="text-xs md:text-sm leading-[1.6] text-gray-400 font-normal italic">
-                    {item.title}
+                    <a href={item.link} target="blank">
+                      Github link for this project
+                    </a>
                   </span>
                 </span>
+              </div>
+              <span className="relative z-20 text-sm leading-3 md:text-xl md:leading-[1.6] text-gray-100 font-normal p-3 text-justify">
+                {item.desc}
+              </span>
+              <div className="flex justify-center pt-6 transform translate-x-[10px]">
+                {item.iconLists?.map((icon, index) => (
+                  <span
+                    key={index}
+                    style={{ transform: `translateX(-${5 * index}px)` }}
+                  >
+                    <img
+                      src={icon}
+                      alt="icon"
+                      className="border border-slate-500 rounded-full sm:w-10 sm:h-10 w-7 h-7 p-1 sm:p-2 bg-gray-900"
+                    />
+                  </span>
+                ))}
               </div>
             </blockquote>
           </li>

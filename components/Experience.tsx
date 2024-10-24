@@ -13,7 +13,7 @@ const Experience = () => {
           return (
             <div className="w-[80vw] lg:w-1/2 p-4" key={idx}>
               <Button duration={Math.floor(Math.random() * 10000) + 10000}>
-                <div className="flex items-center flex-col md:flex-row p-8">
+                <div className="flex items-center flex-col md:flex-row p-8 md:min-h-96 xl:min-h-60">
                   <img
                     src={exp.thumbnail}
                     alt={exp.title}

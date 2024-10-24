@@ -19,8 +19,9 @@ const Footer = () => {
         </a>
       </div>
       <div className="flex flex-col md:flex-row justify-between items-center pt-10 z-10 relative">
-        <p className="text-center order-1 pt-4 sm:text-start sm:-order-none sm:pt-0">
-          Copyright © 2024 Muhammet Baki Duman
+        <p className="text-center text-gray-400 order-1 pt-4 sm:text-start md:-order-none sm:pt-0">
+          <span className="font-bold text-white">Copyright © 2024</span> Baki
+          Duman
         </p>
         <div className="flex gap-4 items-center">
           {socialMedia.map((item) => (

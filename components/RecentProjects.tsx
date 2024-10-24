@@ -21,13 +21,13 @@ const RecentProjects = () => {
               href={project.link}
             >
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden">
-                <div className="relative w-full bg-violet-950 overflow-hidden rounded-3xl h-full ">
+                <div className="relative w-full bg-violet-950 overflow-hidden rounded-t-3xl h-full ">
                   <img src="/bg.png" />
                 </div>
                 <img
                   src={project.img}
                   alt={project.title}
-                  className="rounded-lg absolute bottom-0"
+                  className="absolute -bottom-3 transform rotate-3 w-11/12 rounded-t-3xl overflow-hidden"
                 />
               </div>
               <div>
