@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
@@ -121,9 +122,11 @@ export const InfiniteMovingCards = ({
                     key={index}
                     style={{ transform: `translateX(-${5 * index}px)` }}
                   >
-                    <img
+                    <Image
                       src={icon}
                       alt="icon"
+                      width={28}
+                      height={28}
                       className="border border-slate-500 rounded-full sm:w-10 sm:h-10 w-7 h-7 p-1 sm:p-2 bg-gray-900"
                     />
                   </span>

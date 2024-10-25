@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "./ui/MovingCard";
 import { workExperience } from "@/data";
 
@@ -14,10 +15,12 @@ const Experience = () => {
             <div className="w-[80vw] lg:w-1/2 p-4" key={idx}>
               <Button duration={Math.floor(Math.random() * 10000) + 10000}>
                 <div className="flex items-center flex-col md:flex-row p-8 md:min-h-96 xl:min-h-60">
-                  <img
+                  <Image
                     src={exp.thumbnail}
                     alt={exp.title}
                     className="w-28 h-28"
+                    width={112}
+                    height={112}
                   />
                   <div className="mt-4 md:ml-4 text-center md:text-start">
                     <h3 className="text-lg md:text-2xl font-semibold text-blue-100">

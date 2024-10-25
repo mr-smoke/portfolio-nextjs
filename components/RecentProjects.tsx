@@ -1,6 +1,7 @@
 import { projects } from "@/data/index";
 import { PinContainer } from "./ui/PinContainer";
 import { LuExternalLink } from "react-icons/lu";
+import Image from "next/image";
 
 const RecentProjects = () => {
   return (
@@ -22,11 +23,20 @@ const RecentProjects = () => {
             >
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden">
                 <div className="relative w-full bg-violet-950 overflow-hidden rounded-t-3xl h-full ">
-                  <img src="/bg.png" />
+                  <Image
+                    src="/bg.png"
+                    alt="background"
+                    width={570}
+                    height={340}
+                    className="max-w-full h-auto"
+                  />
                 </div>
-                <img
+                <Image
                   src={project.img}
                   alt={project.title}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
                   className="absolute -bottom-3 transform rotate-3 w-11/12 rounded-t-3xl overflow-hidden"
                 />
               </div>
@@ -45,9 +55,11 @@ const RecentProjects = () => {
                       key={index}
                       style={{ transform: `translateX(-${5 * index}px)` }}
                     >
-                      <img
+                      <Image
                         src={icon}
                         alt="icon"
+                        width={28}
+                        height={28}
                         className="border border-slate-500 rounded-full sm:w-10 sm:h-10 w-7 h-7 p-1 sm:p-2 bg-gray-900"
                       />
                     </span>

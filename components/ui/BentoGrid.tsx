@@ -5,6 +5,7 @@ import GridGlobe from "./GridGlobe";
 import { useState } from "react";
 import { ButtonsCard } from "./ButtonsCard";
 import { IoCopyOutline } from "react-icons/io5";
+import Image from "next/image";
 
 export const BentoGrid = ({
   className,
@@ -67,8 +68,11 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && "flex justify-center"} h-full"`}>
         <div className="w-full h-full absolute">
           {img && (
-            <img
+            <Image
               src={img}
+              alt="title"
+              width={100}
+              height={100}
               className={cn("object-cover object-center", imgClassName)}
             />
           )}
@@ -79,8 +83,11 @@ export const BentoGridItem = ({
           }`}
         >
           {spareImg && (
-            <img
+            <Image
               src={spareImg}
+              alt="title"
+              width={100}
+              height={100}
               className="w-full h-full object-cover object-center"
             />
           )}

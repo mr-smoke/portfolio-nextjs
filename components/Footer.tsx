@@ -1,6 +1,7 @@
 import { socialMedia } from "@/data";
 import { ButtonsCard } from "./ui/ButtonsCard";
 import Background from "./ui/Background";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
           <span className="text-fuchsia-500"> next level?</span>
         </h2>
         <p className="text-xl text-center pt-4">
-          Let's work together to create something unique.
+          Let&apos;s work together to create something unique.
         </p>
         <a href="mailto:muhammetbakiduman@gmail.com">
           <ButtonsCard>Get in touch</ButtonsCard>
@@ -32,7 +33,13 @@ const Footer = () => {
               rel="noreferrer"
               className="border border-slate-800 rounded-xl p-2 hover:opacity-80 transition-opacity"
             >
-              <img src={item.img} alt={item.name} className="w-6" />
+              <Image
+                src={item.img}
+                alt={item.name}
+                className="w-6"
+                width={24}
+                height={24}
+              />
             </a>
           ))}
         </div>
